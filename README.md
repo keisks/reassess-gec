@@ -2,12 +2,12 @@
 
 Data and scripts used in 2016 TACL paper, "Reassessing the Goals of Grammatical Error Correction: Fluency Instead of Grammaticality"
 
-- Keisuke Sakaguchi (keisuke[at]cs.jhu.edu)
+- Keisuke Sakaguchi
 - Courtney Napoles
 - Matt Post
 - Joel Tetreault
 
-Last updated: April 20th, 2016
+Last updated: April 12th, 2016
 
 - - -
 
@@ -25,6 +25,14 @@ This document describes the proposed method described in the following paper:
       url       = {###}
     }
 
+## Data
 
-## Questions and comments:
- - Please e-mail to Keisuke Sakaguchi (keisuke[at]cs.jhu.edu).
+    .
+    ├── README.md  # this file
+    ├── annotations # fluency and minimal edits by experts and non-experts
+    ├── inter_annotator_agreements # human judgments
+    └── trueskill_rankings # scripts for get the ranking by human
+
+
+## Questions
+ - Please e-mail to Keisuke Sakaguchi (keisuke[at]cs.jhu.edu) and Courtney Napoles (courtneyn[at]jhu.edu).
