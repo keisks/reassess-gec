@@ -11,7 +11,7 @@ Last updated: April 12th, 2016
 
 - - -
 
-This document describes the proposed method described in the following paper:
+This repository contains data and scripts in the following paper:
 
     @InProceedings{###,
       author    = {Sakaguchi, Keisuke  and  Napoles, Courtney and Post, Matt  and  Tetreault, Joel},
