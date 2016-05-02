@@ -1,7 +1,7 @@
 # Fluency and minimal-edit annotations
 
 These are the annotations that we collected for the sentence in the NUCLE test set
-[download](http://www.comp.nus.edu.sg/~nlp/conll14st.html). There are 1313 sentences in
+([available here](http://www.comp.nus.edu.sg/~nlp/conll14st.html)). There are 1313 sentences in
 the original data, however the expert annotators identified 34 sentences that should have
 been merged together. The line numbers of these sentences are included in the `merged_ids`
 file (1-indexed). For our analysis, we skipped these sentences in all annotation sets.
