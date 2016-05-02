@@ -7,20 +7,20 @@ Data and scripts used in 2016 TACL paper, "Reassessing the Goals of Grammatical 
 - Matt Post
 - Joel Tetreault
 
-Last updated: April 12th, 2016
+Last updated: May 2nd, 2016
 
 - - -
 
 This repository contains data and scripts in the following paper:
 
-    @InProceedings{###,
+    @article{sakaguchi2016reassessing,
       author    = {Sakaguchi, Keisuke  and  Napoles, Courtney and Post, Matt  and  Tetreault, Joel},
       title     = {Reassessing the Goals of Grammatical Error Correction: Fluency Instead of Grammaticality},
-      booktitle = {TACL},
+      journal = {Transactions of the Association for Computational Linguistics},
+      volume	= {###},
       month     = {###},
       year      = {2016},
       address   = {###},
-      publisher = {Association for Computational Linguistics},
       pages     = {###},
       url       = {###}
     }
@@ -31,6 +31,7 @@ This repository contains data and scripts in the following paper:
     ├── README.md  # this file
     ├── annotations # fluency and minimal edits by experts and non-experts
     ├── inter_annotator_agreements # human judgments
+    ├── metric_scores # system-level scores by all metric-reference pairs
     └── trueskill_rankings # scripts for get the ranking by human
 
 
