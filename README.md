@@ -7,11 +7,12 @@ Data and scripts used in 2016 TACL paper, "Reassessing the Goals of Grammatical 
 - Matt Post
 - Joel Tetreault
 
-Last updated: April 12th, 2016
+Last updated: May 2nd, 2016
 
 - - -
 
 This repository contains data and scripts in the following paper:
+
     @article{TACL800,
             author = {Sakaguchi, Keisuke  and Napoles, Courtney  and Post, Matt
     and Tetreault, Joel },
@@ -51,6 +52,7 @@ This repository contains data and scripts in the following paper:
     ├── README.md  # this file
     ├── annotations # fluency and minimal edits by experts and non-experts
     ├── inter_annotator_agreements # human judgments
+    ├── metric_scores # system-level scores by all metric-reference pairs
     └── trueskill_rankings # scripts for get the ranking by human
 
 
