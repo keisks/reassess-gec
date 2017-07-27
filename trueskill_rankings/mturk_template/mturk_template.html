@@ -1,0 +1,201 @@
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" /><!--<section class="container" id="Other" style="margin-bottom:15px; background-color: #FFA07A; border:5px solid #FFA07A; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">-->
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+    <style type="text/css">table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+        table-layout: fixed;
+    // width: 300px;
+        font-size:15px;
+    }
+
+    .mybutton {font-size:12px;}
+
+    .panel-heading {
+        background-color: #FAF4D2 !important;
+        border: 0px solid ;
+    }
+    .panel-primary {
+    //border-color: #FAF4D2;
+    //border: 10px solid #FAF4D2;
+        border-color: #FFFFFF;
+        border: 0px solid #FFFFFF;
+    }
+    .change {
+        color: #FF0000;
+    }
+    .expl {
+        color: #0000FF;
+    }
+
+    .instr {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        width: 88%;
+    }
+
+    .strike { color:#D3EDFB; text-decoration: line-through;}
+    .add { background-color:#FAD2EC; }
+    </style>
+    <script type="text/javascript">
+        function show1(num)
+        {
+            if (num == 0)
+            {
+                document.getElementById("disp1").style.display="block";
+            }
+            else
+            {
+                document.getElementById("disp1").style.display="none";
+            }
+        }
+        function show2(num)
+        {
+            if (num == 0)
+            {
+                document.getElementById("disp2").style.display="block";
+            }
+            else
+            {
+                document.getElementById("disp2").style.display="none";
+            }
+        }
+        function show3(num)
+        {
+            if (num == 0)
+            {
+                document.getElementById("disp3").style.display="block";
+            }
+            else
+            {
+                document.getElementById("disp3").style.display="none";
+            }
+        }
+        function show4(num)
+        {
+            if (num == 0)
+            {
+                document.getElementById("disp4").style.display="block";
+            }
+            else
+            {
+                document.getElementById("disp4").style.display="none";
+            }
+        }
+        function show5(num)
+        {
+            if (num == 0)
+            {
+                document.getElementById("disp5").style.display="block";
+            }
+            else
+            {
+                document.getElementById("disp5").style.display="none";
+            }
+        }
+    </script>
+    <div class="row col-xs-12 col-md-12"><!-- Instructions -->
+        <div class="panel panel-primary">
+            <h3 class="panel-heading"><strong><span style="color: #1E1518;">Grammaticality Ranking Challenge</span></strong></h3>
+
+            <div class="panel-body">
+                <div class="panel-body"><!-- <p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt;"><span style="color:#FF0000;"><span id="docs-internal-guid-324dee60-0002-a778-f441-84dedd2e38a3"><span style="font-size: 20px; font-family: Arial; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;"><strong>Please read the following instructions carefully! </strong></span></span></span></p>
+ -->
+                    <p class="instr"><strong>[INSTRUCTIONS]</strong></p>
+
+                    <p class="instr">You will be presented a sentence ([ORIGINAL]) that may contain grammatical errors. The next group of sentences are possible grammatical corrections to that original sentence.</p>
+
+                    <p class="instr">Please rank that group of corrected sentences by their fluency. The rank is between <span style="color:#F42967;"><strong>1 (the best) and 5 (the worst), and ties are allowed</strong></span>.</p>
+
+                    <p class="instr"><span style="color:#0000FF;">NOTE (Please read carefully.):</span></p>
+
+                    <p class="instr"><span style="color:#0000FF;">Please ignore tokenization (n&#39;t, &#39;s, &#39;ve, &quot;.&quot;, &quot;,&quot; etc. are splitted just for machine readability).</span></p>
+
+                    <p class="instr"><span style="color:#0000FF;">If you rank them randomly, the submission may be rejected.</span></p>
+
+                    <p class="instr"><span style="color:#0000FF;">If there are the same sentences, they should have the same rank. Ties are allowed. If violated, the submission is automatically rejected.</span></p>
+
+                    <p class="instr"><span style="color:#0000FF;">If you are not confident, please skip the HIT.</span></p>
+                    <!--<p class="instr"> In mark-up, this word is <span class="delete">deleted</span>, and this is <span class="insert">inserted</span>.</p> --></div>
+            </div>
+
+            <section>
+                <fieldset>
+                    <table style="width:100%">
+                        <tbody>
+                        <tr>
+                            <td width="100">ORIGINAL</td>
+                            <td width="100%">${source}</td>
+                        </tr>
+                        <tr>
+                            <td width="100"><select class="form-control" name="Answer1" style="width: 60px"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+                            <td width="100%">${markup1}
+                                <p>&nbsp;</p>
+
+                                <form><input class="mybutton" onclick="show1(0)" type="button" value="Show plain text" /> <input class="mybutton" onclick="show1(1)" type="button" value="Hide plain text" />&nbsp;</form>
+
+                                <div id="disp1" style="display:none;">${sentence1}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100"><select class="form-control" name="Answer2" style="width: 60px"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+                            <td width="100%">${markup2}
+                                <p>&nbsp;</p>
+
+                                <form><input class="mybutton" onclick="show2(0)" type="button" value="Show plain text" /> <input class="mybutton" onclick="show2(1)" type="button" value="Hide plain text" />&nbsp;</form>
+
+                                <div id="disp2" style="display:none;">${sentence2}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100"><select class="form-control" name="Answer3" style="width: 60px"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+                            <td width="100%">${markup3}
+                                <p>&nbsp;</p>
+
+                                <form><input class="mybutton" onclick="show3(0)" type="button" value="Show plain text" /> <input class="mybutton" onclick="show3(1)" type="button" value="Hide plain text" />&nbsp;</form>
+
+                                <div id="disp3" style="display:none;">${sentence3}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100"><select class="form-control" name="Answer4" style="width: 60px"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+                            <td width="100%">${markup4}
+                                <p>&nbsp;</p>
+
+                                <form><input class="mybutton" onclick="show4(0)" type="button" value="Show plain text" /> <input class="mybutton" onclick="show4(1)" type="button" value="Hide plain text" />&nbsp;</form>
+
+                                <div id="disp4" style="display:none;">${sentence4}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100"><select class="form-control" name="Answer5" style="width: 60px"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+                            <td width="100%">${markup5}
+                                <p>&nbsp;</p>
+
+                                <form><input class="mybutton" onclick="show5(0)" type="button" value="Show plain text" /> <input class="mybutton" onclick="show5(1)" type="button" value="Hide plain text" />&nbsp;</form>
+
+                                <div id="disp5" style="display:none;">${sentence5}</div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <hr />
+                    <hr />
+                    <p><span style="font-size: 14px;">Comments (This is optional. Please leave a comment if you find a problem.)</span></p>
+                </fieldset>
+            </section>
+        </div>
+        <span style="font-size: 14px;"><textarea class="form-control" cols="120" name="Comments" rows="5"></textarea></span></div>
+</section>
+
+<p><span style="font-size: 1px; color: #FFFFFF;">${sentID}${system1}${system2}${system3}${system4}${system5}</span>
+    <style type="text/css">fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }
+    </style>
+</p>
+
